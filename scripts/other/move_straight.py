@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import rospy
 from geometry_msgs.msg import Twist
 
@@ -12,10 +12,10 @@ def move():
     print("Let's move your robot")
     speed = float(input("Input your speed:"))
     distance = float(input("Type your distance:"))
-    isForward = bool(input("Foward?: "))    # True or False
+    isForward = input("Foward?: ")    # True or False
 
     #Checking if the movement is forward or backwards
-    if(isForward):
+    if isForward.lower() in ['true', '1', 't', 'y', 'yes']:
         vel_msg.linear.x = abs(speed)
     else:
         vel_msg.linear.x = -abs(speed)
