@@ -37,6 +37,12 @@ add_action_files(
    FILES
     # primitives (add .action file for primitives below)
     # ActionTemplate.action
+    Gotogoal.action
+    MonitorOrientation.action
+    Move.action
+    Patrol.action
+    ResetOrientation.action
+    Rotate.action
     # skills  (add .action file for skills below)
 
 )
