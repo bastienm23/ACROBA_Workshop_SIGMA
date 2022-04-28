@@ -11,7 +11,8 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   message_generation
   actionlib_msgs
-  actionlib)
+  actionlib
+  turtlesim)
 
 
 ## Our script uses a setup.py for catkin to use
@@ -45,6 +46,7 @@ generate_messages(
    DEPENDENCIES
    actionlib_msgs
    geometry_msgs
+   turtlesim
 )
 
 #Since we are using custom messages and packages, we have to declare
